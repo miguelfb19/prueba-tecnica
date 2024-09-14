@@ -1,8 +1,11 @@
 <template>
   <div class="data">
     <h1>{{ title }}</h1>
+
+    <!-- v-if condicional para mostrar esta etiqueta en caso de que no haya datos guardados aún -->
     <h3 v-if="!data || data.length == 0">No hay datos guardados hasta el momento</h3>
 
+    <!-- Se crea una tabla para la muestra de datos guardados -->
     <table class="table table-striped table-bordered border-primary mt-5" v-if="data">
       <thead class="tableHead table-dark">
         <tr>
@@ -21,6 +24,7 @@
           <th>ROD</th>
         </tr>
       </thead>
+      <!-- v-for para mostrar las diferentes filas con los datos obtenidos en formato JSON dando una key a cada elemeto con su propio id -->
       <tbody class="tableBody table-group-divider">
         <tr v-for="dato in data" :key="dato.id">
           <td>{{ dato.commerce }}</td>
@@ -57,15 +61,19 @@ export default {
     };
   },
   methods: {
+    // metodo que obtiene los datos desde localStorage, se puede modificar para cualquier tipo de DB
     getData() {
       this.data = Object.keys(localStorage)
         .filter((key) => key.startsWith("_id__:"))
         .map((key) => JSON.parse(localStorage.getItem(key)));
     },
+    // metodo vue-router para ir a una pagina especifica
     back(){
         this.$router.push('/')
     }
   },
+
+  // se ejecuta la obtencion de los datos cuando se monta el componente
   mounted() {
     this.getData();
   },

@@ -160,6 +160,7 @@
         </button>
       </section>
 
+      <!-- Diferentes acciones de la vista del form, entre ellas enviar los datos obtenidos de los campos (input) -->
       <section class="buttonsForm">
         <input type="submit" value="Aceptar" class="btn btn-primary" />
         <input type="reset" class="btn btn-primary" />
@@ -212,6 +213,7 @@ export default {
     };
   },
   methods: {
+    //Metodo que guarda los datos del form
     saveData() {
       //creamos un ID para los datos actualmente generados
       let id = crypto.randomUUID();
@@ -253,9 +255,12 @@ export default {
         confirmButtonColor:'#0d6efd',
       })
     },
+
     quitToHome() {
       this.$router.push("/");
     },
+
+    //Estos 3 metodos cambian el valor y las clases de los 3 botones grises del form
 
     toggleBvActive() {
       this.bvActive = !this.bvActive;
