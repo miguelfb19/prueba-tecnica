@@ -1,0 +1,149 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  margin-top: 4em !important;
+}
+
+main{
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+}
+
+.menuTitle{
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.containerBtnsHome{
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+.btn-home {
+  color: white;
+  text-decoration: none;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 5em;
+  border: solid 1px;
+  border-radius: 20px;
+  padding: 2em 0;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #d9dcde;
+}
+
+.formGroup {
+  display: flex;
+  gap: 5px;
+}
+
+.left {
+  padding-top: 5%;
+  display: grid;
+  row-gap: 10px;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  width: 10%;
+  align-items: center;
+  height: 40%;
+}
+
+.bv{
+  grid-area: 1 / 1 / 2 / 2;
+  
+}
+.bv:active{
+  transition: all ease;
+  transform: scale(0.8);
+}
+
+.nc{
+  grid-area: 1 / 2 / 2 / 3;
+}
+.nc:active{
+  transition: all ease;
+  transform: scale(0.8);
+}
+
+.rod{
+  grid-area: 2 / 1 / 3 / 3;
+}
+.rod:active{
+  transition: all ease;
+  transform: scale(0.8);
+}
+
+.btnActive{
+  background-color: #6c757d !important;
+  color: white !important;
+  font-weight: bold !important;
+}
+
+.buttonsForm{
+  display: flex;
+  width: 70%;
+  gap: 2em;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.tableHead{
+  text-transform: uppercase;
+}
+
+.data{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.table-dark{
+  --bs-table-bg: #0d6efd !important;
+}
+
+.btnsData{
+  width: 50%;
+}
+
+.footer{
+  background-color: #0d6efd;
+  margin-top: auto;
+  line-height: 4em;
+  display: flex;
+  justify-content: center;
+  width: 100vw !important;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
