@@ -14,10 +14,18 @@ import { RouterLink } from "vue-router";
       >
     </button>
 
-    <a href="https://miguelangeldev.vercel.app" class="btn btn-outline-primary" target="_blank"
+    <a
+      href="https://miguelangeldev.vercel.app"
+      class="btn btn-outline-primary"
+      target="_blank"
       >Ir a mi portafolio</a
     >
 
-    <a href="" class="btn btn-outline-primary">Ver código en GitHub</a>
+    <a
+      href="https://github.com/miguelfb19/prueba-tecnica"
+      class="btn btn-outline-primary"
+      target="_blank"
+      >Ver código en GitHub</a
+    >
   </div>
 </template>
