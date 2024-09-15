@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="formMain">
     <h1 class="mb-5">{{ title }}</h1>
     <!-- Creamos un Formulario HTML con los respectivos campos y usando clases de BOOTSTRAP para darle estilo responsive-->
     <form class="form" @submit.prevent="saveData()">

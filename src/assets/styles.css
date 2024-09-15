@@ -146,4 +146,128 @@ main{
   position: fixed;
   bottom: 0;
   left: 0;
+  text-align: center;
 }
+
+/* _______________________________________________________________________________________________________ */
+/* MEDIA QUERYS */
+/* _______________________________________________________________________________________________________ */
+
+/* _______________________________________________________________________________________________________ */
+/* IPAD PRO (GRANDE) O PC PEQUEÑO */
+/* _______________________________________________________________________________________________________ */
+
+@media (max-width: 1024px) {
+  body{
+    align-items: center;
+    margin-top: 0 !important;
+  }
+
+  .form{
+    justify-content: flex-start;
+    column-gap: 2em;
+  }
+
+  .data{
+    width: 90%;
+    overflow-x: scroll;
+  }
+
+  .table{
+    align-self: start;
+  }
+}
+
+/* _______________________________________________________________________________________________________ */
+/* IPAD */
+/* _______________________________________________________________________________________________________ */
+
+@media (max-width: 1024px) {
+
+  .containerBtnsHome{
+    flex-wrap: wrap;
+  }
+
+  .form{
+    column-gap: 0;
+    flex-direction: column;
+    width: auto;
+    row-gap: 1.5em;
+  }
+
+  .left{
+    width: 70%;
+  }
+
+  .data{
+    width: 60%;
+  }
+
+  .btnsData{
+    width: 80%;
+  }
+}
+
+/* _______________________________________________________________________________________________________ */
+/* PHONE */
+/* _______________________________________________________________________________________________________ */
+
+@media (max-width: 500px) {
+
+  .containerBtnsHome{
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+  }
+
+  .formMain{
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+
+  .form{
+    width: 90%;
+  }
+
+  .left{
+    width: 90%;
+  }
+
+  .right{
+    justify-content: center;
+  }
+
+  div.col-7.gap-1{
+    width: 50%;
+    padding: 0;
+  }
+
+  div.col.row{
+    padding-right: 4%;
+  }
+
+  label.col-6{
+    padding-right: 0;
+  }
+  input#when.col-6{
+    padding: 0;
+  }
+
+  .buttonsForm{
+    flex-wrap: wrap;
+  }
+
+  .data{
+    width: 30%;
+  }
+
+  .btnsData{
+    width: 120%;
+  }
+
+  .footer{
+    font-size: 10px;
+  }
+
+}
+
